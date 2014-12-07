@@ -6,8 +6,7 @@ OwnROM
 Nexus devices:
 
 Nexus 5 HAMMERHEAD by Mark Visser​​​​​​​​​
-Nexus 7 (2013) FLO by Nils Dohmen​​​​​​​​​
-Nexus 7 (2012) GROUPER by Ilyas Jaspers
+Nexus 7 (2013) FLO by nils dohmen​​​​​​​​​
 
 
 Samsung devices:
@@ -19,9 +18,8 @@ SGS3 MINI I8190 by Nasir Ahmed​​​​​​
 SGS5 KLTE by Mark Visser​​​​​​​​​
 SGNOTE 2 T0LTE by Mark Visser​​​​​​​​​
 SGNOTE 3 ? by Mark Visser​​​​​​​​​
-SGACE ? by Nils Dohmen​​​​​​​​​
-GTPro 8.4 WiFi MONDRIANWIFI by Bram Ruttens​​​
-OPPO FIND 5 by Bram Ruttens​​​
+SGACE ? by nils dohmen​​​​​​​​​
+GTPro 8.4 wifi MONDRIANWIFI by +Bram Ruttens​​​
 
 
 Sony devices:
