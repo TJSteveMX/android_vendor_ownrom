@@ -236,12 +236,18 @@ else
 	OWNROM_VERSION_STATE := $(shell date +%Y.%m.%d)
 	OWNROM_VERSION := $(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)
 endif
-	
+
+OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION)
+
 # statistics identity
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ownrom.version=$(OWNROM_VERSION) \
 	ro.ownrom.releasetype=$(OWNROM_BUILDTYPE) \
 	ro.modversion=$(OWNROM_VERSION)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.ownrom.display.version=$(OWNROM_DISPLAY_VERSION)
+
 	
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
