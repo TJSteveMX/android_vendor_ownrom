@@ -89,8 +89,8 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/owrnom/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/owrnom/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/ownrom/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/ownrom/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
