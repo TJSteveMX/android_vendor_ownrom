@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/ownrom/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/owrnom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/ownrom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
