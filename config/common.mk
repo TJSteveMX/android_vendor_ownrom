@@ -98,7 +98,6 @@ PRODUCT_COPY_FILES += \
 # OwnROM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/ownrom/prebuilt/common/etc/init.local.rc:root/init.ownrom.rc
-    external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
