@@ -1,7 +1,6 @@
 PRODUCT_BRAND ?= ownrom
 
 SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -96,7 +95,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/ownrom/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# CM-specific init file
+# OwnROM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/ownrom/prebuilt/common/etc/init.local.rc:root/init.ownrom.rc
 
@@ -213,10 +212,6 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
-else
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
 
 endif
 
@@ -229,10 +224,10 @@ OWNROM_VERSION_MINOR =
 
 # release
 ifeq ($(RELEASE),true)
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)-Alpha
+	OWNROM_VERSION := OFFICIAL-OwnROM-$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)-$(OWNROM_BUILD)-Alpha
 else
 	OWNROM_VERSION_STATE := $(shell date +%Y.%m.%d)
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)
+	OWNROM_VERSION := OFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)-$(OWNROM_BUILD)
 endif
 
 OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION)
