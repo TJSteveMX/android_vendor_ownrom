@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/ownrom/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/owrnom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/ownrom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -225,14 +225,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/ownrom/overlay/common
 # version
 OWNROM_RELEASE = false
 OWNROM_VERSION_MAJOR = 2.0
-OWNROM_VERSION_MINOR = 0
+OWNROM_VERSION_MINOR = 
 
 # release
 ifeq ($(RELEASE),true)
 	OWNROM_VERSION := OwnROM-$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)-Alpha
 else
-	OWNROM_VERSION_STATE := $(shell date +%Y.%m.%d)
-	OWNROM_VERSION := $(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)
+	OWNROM_VERSION_STATE := OwnROM-$(shell date +%Y.%m.%d)
+	OWNROM_VERSION := OwnROM-$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)
 endif
 
 OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION)
