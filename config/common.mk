@@ -112,6 +112,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/fusion/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
+
 # This is OwnROM!!
 PRODUCT_COPY_FILES += \
     vendor/ownrom/config/permissions/com.ownrom.android.xml:system/etc/permissions/com.ownrom.android.xml
@@ -224,10 +229,10 @@ OWNROM_VERSION_MINOR =
 
 # release
 ifeq ($(RELEASE),true)
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)-$(OWNROM_BUILD)-Alpha
+	OWNROM_VERSION := UNOFFICIAL-OwnROM-$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)-$(OWNROM_BUILD)-Alpha
 else
 	OWNROM_VERSION_STATE := $(shell date +%Y.%m.%d)
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR).$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)-$(OWNROM_BUILD)
+	OWNROM_VERSION := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(OWNROM_VERSION_STATE)-$(OWNROM_BUILD)
 endif
 
 OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION)
