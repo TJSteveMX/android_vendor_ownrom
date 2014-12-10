@@ -239,9 +239,9 @@ OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION_STATE)
 
 # statistics identity
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.ownrom.version=$(OWNROM_VERSION) \
+	ro.ownrom.version=$(OWNROM_VERSION_STATE) \
 	ro.ownrom.releasetype=$(OWNROM_BUILDTYPE) \
-	ro.modversion=$(OWNROM_VERSION)
+	ro.modversion=$(OWNROM_VERSION_STATE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ownrom.display.version=$(OWNROM_DISPLAY_VERSION)
