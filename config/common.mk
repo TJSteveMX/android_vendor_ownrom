@@ -114,7 +114,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/fusion/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/ownrom/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 
 # This is OwnROM!!
@@ -227,10 +227,10 @@ OWNROM_VERSION_MINOR =
 
 # release
 ifeq ($(RELEASE),true)
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-BETA
+	OWNROM_VERSION := OFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-BETA
 else
-	OWNROM_VERSION_STATE := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-BETA
-	OWNROM_VERSION := UNOFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-$(OWNROM_BUILD)-BETA
+	OWNROM_VERSION_STATE := OFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-BETA
+	OWNROM_VERSION := OFFICIAL-OwnROM-V$(OWNROM_VERSION_MAJOR)$(OWNROM_VERSION_MINOR)_$(shell date +%Y.%m.%d)-$(OWNROM_BUILD)-BETA
 endif
 
 OWNROM_DISPLAY_VERSION := $(OWNROM_VERSION_STATE)
