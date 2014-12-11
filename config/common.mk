@@ -114,7 +114,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/fusion/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/ownrom/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 
 # This is OwnROM!!
