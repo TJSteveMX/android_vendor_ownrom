@@ -218,7 +218,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/ownrom/overlay/common
 # version
 OWNROM_RELEASE = false
 OWNROM_VERSION_MAJOR = 2.0
-OWNROM_VERSION_MINOR = -BETA 
+OWNROM_VERSION_MINOR = -BETA
 
 # release
 ifeq ($(RELEASE),true)
