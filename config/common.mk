@@ -88,8 +88,8 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/owrnom/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/owrnom/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/ownrom/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/ownrom/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
@@ -102,7 +102,7 @@ PRODUCT_COPY_FILES += \
 # Bring in camera effects
 PRODUCT_COPY_FILES += \
     vendor/ownrom/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/owrnom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/ownrom/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -111,6 +111,11 @@ PRODUCT_COPY_FILES += \
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/ownrom/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 
 # This is OwnROM!!
 PRODUCT_COPY_FILES += \
